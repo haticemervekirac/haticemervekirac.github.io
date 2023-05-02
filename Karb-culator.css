@@ -1,0 +1,116 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: none;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #89375F;
+}
+.small {
+  flex-basis: 30%;
+}
+
+.large {
+  flex-basis: 60%;
+}
+/*Shows a message about the Sign up process and how to set an alert*/
+  .hidden-div {
+    display: none;
+  }
+  
+  .hover-div:hover + .hidden-div {
+    display: block;
+  }
+
+.container {
+  
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 5px; /* Add padding around the container */
+  background-color: #f1f3f6; /* Set the background color of the container */
+  border: 10px solid #89375F; /* Add a border around the container */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+.container2 {
+  
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 5px; /* Add padding around the container */
+  background-color: #89375F; /* Set the background color of the container */
+  text-decoration-color: rgb(255, 255, 255); 
+  color:#f1f1f1;
+  border: 10px solid #f1f3f6; /* Add a border around the container */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+body {
+  color: #6a6c6f;
+  background-color: #BACDDB;
+  margin-top: 30px;
+}
+h1, h2 {
+  color: #000000
+  
+}
+
+h3 {
+  color: #1e1e1e;
+  font-size: 20px;
+  
+}
+
+h4 {
+  color: #252525;
+  font-size: 15px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #f1f3f6;  
+  color: #000000;
+    cursor: pointer;
+    padding: 5px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+
+    font: Verdana;
+    
+    
+  }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+
+  /*The main calculation window. It calculates the amounts user still needs to take, based on the dietary limitation and 
+ the given amount of food*/
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #results-container {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #results-container p {
+    margin: 0;
+  }
+  
